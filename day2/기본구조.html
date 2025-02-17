@@ -4,22 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>기본구조</title>
+    <style>
+        div {
+            height: 5000px;
+            background-color: aqua;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        코드를 작성했다!
-        <!-- 설정 코드에 대한 설명입니다. -->
+    <!-- 
+        HTML5 : 시맨틱태그가 생겨나면서 구조적인 마크업을 할 수 있게 됨
+        시맨틱마크업 장점 : 웹 접근성을 높인다. / 검색엔진 최적화에 도움
+    -->
+    <header id="header">
+        <h1>안녕하세요</h1>
+        <h2>안녕하세요</h2>
+        <h3>안녕하세요</h3>
+        <h4>안녕하세요</h4>
+        <h5>안녕하세요</h5>
+        <h6>안녕하세요</h6>
         <!-- 
-        주석 : 단축키 ctrl + /
-        수정날짜 / 내용 / 주의할점
+        h1 : 문서에 한 번은 꼭 작성되어야함
+            1번 이상 사용 불가!!
+        h2 ~ h6 : 여러번 사용 가능 (헤딩텍스트라는 의미에 맞게 제목텍스트로 사용하기)
         -->
-    </div>
+    </header>
+
     <div>
-        <p>
-            <span>
-                <a href=""></a>
-            </span>
-        </p>
+        <!-- div: 의미가 없는 태그 ( 주로 감싸거나 묶을 때 사용 ) -->
+        <nav>
+            <a href="https://www.youtube.com/watch?v=r6DPTkfrkpg&t=8847s">
+                유튜브 바로가기
+            </a>
+            <a href="https://naver.com">
+                네이버 바로가기
+            </a>
+            <a href="../day1/hello.html">
+                hello.html  바로가기
+            </a>
+        </nav>
     </div>
+
+    <footer>
+        <a href="#header">
+            문서 맨위 바로가기
+        </a>
+    </footer>
+
 </body>
 </html>
