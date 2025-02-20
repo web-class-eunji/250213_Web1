@@ -5,9 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>텍스트태그</title>
+    <style>
+        .hr {
+            display: none;
+        }
+
+        .hr_show:hover + .hr {
+            display: block;
+        }
+    </style>
 </head>
 
-<body>
+<hr>
     <!-- h1 ~ h6 : 블록 -->
     <h1>텍스트태그 실습</h1>
     <!-- h1은 한 문서에 하나만 존재 가능 -->
@@ -26,11 +35,12 @@
         </span>
         공부중
     </p>
-    <p>
+    <p class="hr_show">
         p태그는 단락
         <br>
         태그입니다!
     </p>
+    <hr class="hr">
 
     
 </body>
