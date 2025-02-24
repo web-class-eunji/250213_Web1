@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼양식태그</title>
+</head>
+
+<body>
+    <select name="lang" id="lang" size="5" multiple>
+        <option value="html">html</option>
+        <option value="css">css</option>
+        <option value="javascript">javascript</option>
+        <option value="react">react</option>
+        <option value="vue">vue</option>
+    </select>
+
+    <form action="/submit">
+        <label for="nametext">이름 : </label>
+        <!-- label : 접근성! 요소와 레이블의 관계를 명확하게 전달함 -->
+        <input type="text">
+        <input type="password">
+        <button type="reset">초기화</button>
+        <button type="submit">제출</button>
+    </form>
+</body>
+
+</html>
