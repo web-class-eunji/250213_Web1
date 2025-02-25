@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css문법</title>
+    <style>
+        h1 {
+            color: deeppink;
+            font-size: 14px;
+            /* 속성(프로퍼티): 속성값(벨류값); */
+        }
+
+        #id_section {
+            background-color: cornflowerblue;
+        }
+
+        #id_section > h2 {
+            color: red;
+        }
+
+        article span {
+            color: blue;
+        }
+
+        .front_end_lang + li {
+            background-color: aqua;
+        }
+
+        .p_tag,
+        h3,
+        #span_tag {
+            background-color: brown;
+            color: #fff;
+            font-size: 24px;
+            font-weight: 600;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>클래스 문법 실습</h1>
+    <section id="id_section">
+        <h2 class="red_text">아이디선택자</h2>
+    </section>
+
+    <h2 class="red_text">아이디선택자</h2>
+
+    <article>
+        <div>
+            나는 이렇게 글을 작성하다가
+            <span class="color_change">이 부분만 색깔 변경</span>
+            할겁니다!!
+        </div>
+        <section>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae cum officia ex culpa vitae sequi perferendis deleniti sed odio atque quod dolorem earum, eos omnis quae alias libero placeat assumenda!
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit dignissimos quaerat itaque natus tenetur. Quis, at deleniti? Voluptatem voluptatibus neque, quos dolorem totam minus blanditiis quas. In beatae totam fugiat.
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, sunt velit. Quas, ratione voluptates, a sed quod unde temporibus, laudantium nam id magnam ad delectus provident ipsam tempore fugiat doloremque!</span>
+            </p>
+        </section>
+    </article>
+
+    <ul>
+        <li>html</li>
+        <li>css</li>
+        <li class="front_end_lang">javascript</li>
+        <li>react</li>
+        <li>vue</li>
+    </ul>
+
+    <div>
+        <p class="p_tag">p태그</p>
+        <h3>헤딩3</h3>
+        <span id="span_tag">span태그</span>
+    </div>
+</body>
+</html>
