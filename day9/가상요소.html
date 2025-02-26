@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소</title>
+    <style>
+        .box > p::before {
+            width: 200px;            
+            height: 1px;
+            background-color: black;
+            content: '';
+            display: block;
+        }
+
+        .box > p::after {
+            content: "";
+            width: 200px;
+            height: 200px;
+            background: greenyellow;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>내일은 목요일입니다</p>
+    </div>
+</body>
+</html>

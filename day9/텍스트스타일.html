@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트 스타일</title>
+    <style>
+        h1 {
+            color: red;
+            font-size: 50px;
+
+        }
+
+        p {
+            /* font-size: 2em; */
+            font-weight: bold;
+        }
+        /* em : 부모요소의 폰트 크기를 기준으로 상대적인 크기를 지정
+                부모요소가 16px 이라면 자식요소에게 1em을 주면 16px이 된다.
+                2em을 주면 32가 되겠죵??
+            rem : 최상위 요소의 크기가 달라질 때만 영향을 받는다
+         */
+
+        /* text-align */
+
+        .text_align_left {
+            text-align: left;
+        }
+
+        .text_align_center {
+            text-align: center;
+        }
+
+        .text_align_right {
+            text-align: right;
+        }
+
+        .span_container {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+
+
+        /* vertical-align */
+
+        .vertical_container {
+            font-size: 50px;
+        }
+
+        .vertical_1 > span{
+            vertical-align: top;
+            font-size: 16px;
+        }
+
+        .vertical_2 > span{
+            vertical-align: middle;
+            font-size: 16px;
+        }
+
+        .vertical_3 > span{
+            vertical-align: bottom;
+            font-size: 16px;
+        }
+
+
+        /* text-decoration */
+        .link_box > a:nth-child(1) {
+            text-decoration: none;
+        }
+
+        .link_box > a:nth-child(1):hover {
+            text-decoration: underline;
+        }
+
+        .link_box > a:nth-child(2) {
+            text-decoration: line-through;
+        }
+
+        .link_box > a:last-child {
+            text-decoration: overline;
+        }
+
+        .line_height > p:first-child {
+            line-height: 60px;
+        }
+
+        .line_height > p:nth-child(2) {
+            line-height: 1.5;
+            font-size: 40px;
+            /* line-height값 * font-size 값 : 정확한 line-height px값 계산 가능*/
+        }
+
+        .line_height > p:last-child {
+            line-height: 500%;
+            /* 폰트 크기  * 5라고 생각하기~ */
+        }
+
+        .letter_spacing1 {
+            letter-spacing: 10px;
+        }
+
+        .letter_spacing2 {
+            letter-spacing: -10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        텍스트 스타일
+        <p>커피</p>
+    </h1>
+
+    <p>font-weight</p>
+
+    <div class="text_align_left">왼쪽으로 갈거임</div>
+    <div class="text_align_center">가운데에 있어야징</div>
+    <div class="text_align_right">오른쪽으로 갈거임</div>
+
+    <div class="span_container">
+        <span class="text_align_left">왼쪽으로 갈거임</span>
+        <span class="text_align_center">가운데에 있어야징</span>
+        <span class="text_align_right">오른쪽으로 갈거임</span>
+    </div>
+
+    <p class="right">
+        <span class="text_align_right">오른쪽으로 갈거임</span>
+    </p>
+    <!-- 인라인 태그를 text-align으로 정렬하려면 블록태그로 감싸서
+     블록태그에 text-align 을 부여해야함
+      -->
+
+    <div class="vertical_container">
+        <p class="vertical_1">
+            서브텍스트 맨 위에 올거임
+            <span>서브텍스트</span>
+        </p>
+        <p class="vertical_2">
+            서브텍스트 가운데에 올거임
+            <span>서브텍스트</span>
+        </p>
+        <p class="vertical_3">
+            서브텍스트 밑에 붙일거임
+            <span>서브텍스트</span>
+        </p>
+    </div>
+
+    <div class="link_box">
+        <a href="#">텍스트 데코레이션</a>
+        <a href="#">텍스트 데코레이션</a>
+        <a href="#">텍스트 데코레이션</a>
+    </div>
+
+    <div class="line_height">
+        <p>line-height 실습</p>
+        <p>line-height 실습</p>
+        <p>line-height 실습</p>
+    </div>
+
+    <p class="letter_spacing1">자간을 설정합니다.</p>
+    <p class="letter_spacing2">자간을 설정합니다.</p>
+</body>
+</html>
