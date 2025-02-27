@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .container {
+            position: relative;
+            width: 1000px;
+            border: 1px solid red;
+            height: 500px;
+            margin: 50px;
+        }
+
+        .box {
+            position: absolute;
+            width: 150px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .b1 {
+            background-color: aqua;
+        }
+
+        .b2 {
+            background-color: blueviolet;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .b3 {
+            background-color: rgb(210, 255, 29);
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box b1">왼쪽 위</div>
+        <div class="box b2">중간</div>
+        <div class="box b3">오른쪽 아래</div>
+    </div>
+</body>
+</html>

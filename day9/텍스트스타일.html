@@ -1,10 +1,50 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>텍스트 스타일</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap" rel="stylesheet"> -->
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap');
+        @font-face {
+            font-family: 'PeoplefirstFightingTTF';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2406-2@1.0/PeoplefirstFightingTTF.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Ownglyph_ParkDaHyun';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face{
+            font-family: 'darkcastle';
+            src: url('./Darkcastle_PERSONAL_USE_ONLY.otf');
+        }
+
+        .custom_font {
+            font-family: 'darkcastle';
+        }
+
+        .black-and-white-picture-regular {
+            font-family: "Black And White Picture", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
+        body {
+            /* font-family: 'PeoplefirstFightingTTF'; */
+            font-family: "Black And White Picture", serif;
+        }
+
         h1 {
             color: red;
             font-size: 50px;
@@ -15,6 +55,7 @@
             /* font-size: 2em; */
             font-weight: bold;
         }
+
         /* em : 부모요소의 폰트 크기를 기준으로 상대적인 크기를 지정
                 부모요소가 16px 이라면 자식요소에게 1em을 주면 16px이 된다.
                 2em을 주면 32가 되겠죵??
@@ -49,52 +90,53 @@
 
         .vertical_container {
             font-size: 50px;
+            font-family: 'Ownglyph_ParkDaHyun';
         }
 
-        .vertical_1 > span{
+        .vertical_1>span {
             vertical-align: top;
             font-size: 16px;
         }
 
-        .vertical_2 > span{
+        .vertical_2>span {
             vertical-align: middle;
             font-size: 16px;
         }
 
-        .vertical_3 > span{
+        .vertical_3>span {
             vertical-align: bottom;
             font-size: 16px;
         }
 
 
         /* text-decoration */
-        .link_box > a:nth-child(1) {
+        .link_box>a:nth-child(1) {
             text-decoration: none;
         }
 
-        .link_box > a:nth-child(1):hover {
+        .link_box>a:nth-child(1):hover {
             text-decoration: underline;
         }
 
-        .link_box > a:nth-child(2) {
+        .link_box>a:nth-child(2) {
             text-decoration: line-through;
         }
 
-        .link_box > a:last-child {
+        .link_box>a:last-child {
             text-decoration: overline;
         }
 
-        .line_height > p:first-child {
+        .line_height>p:first-child {
             line-height: 60px;
         }
 
-        .line_height > p:nth-child(2) {
+        .line_height>p:nth-child(2) {
             line-height: 1.5;
             font-size: 40px;
             /* line-height값 * font-size 값 : 정확한 line-height px값 계산 가능*/
         }
 
-        .line_height > p:last-child {
+        .line_height>p:last-child {
             line-height: 500%;
             /* 폰트 크기  * 5라고 생각하기~ */
         }
@@ -108,6 +150,7 @@
         }
     </style>
 </head>
+
 <body>
     <h1>
         텍스트 스타일
@@ -162,5 +205,10 @@
 
     <p class="letter_spacing1">자간을 설정합니다.</p>
     <p class="letter_spacing2">자간을 설정합니다.</p>
+
+    <p class="custom_font">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sit sed quidem enim reprehenderit doloribus quae magni laboriosam officiis. Rem autem neque omnis quod magni explicabo eum assumenda dolorum ipsam!
+    </p>
 </body>
+
 </html>
