@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        .wrapper > span,
+        .wrapper > div {
+            border: 1px solid #000;
+            margin: 10px;
+        }
+
+        .block_1 {
+            width: 500px;
+            height: 500px;
+        }
+
+        .block_2 {
+            display: block;
+            width: 500px;
+            height: 500px;
+        }
+
+        .inline_1 {
+            display: inline;
+        }
+
+        .inline_block {
+            display: inline-block;
+        }
+
+        .inline_block_2 {
+            display: inline-block;
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="none">none</div>
+
+        <span class="block_1">
+            inline 속성 태그에 block을 부여함
+        </span>
+        <span class="block_2">
+            inline 속성 태그에 block속성을 부여하고 width/height값을 부여함
+        </span>
+
+        <div class="inline_1">
+            block 속성에 inline을 부여함
+        </div>
+
+        <div class="inline_block">인라인 블록이란?</div>
+        <span class="inline_block_2">
+            인라인 태그에 인라인블록 속성을 부여한 후 
+            크기를 조절하면? 
+        </span>
+    </div>
+</body>
+</html>
