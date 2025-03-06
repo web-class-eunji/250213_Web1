@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>헤더구조</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: crimson;
+            color: #fff;
+            height: 100px;
+            padding: 0 16px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 900;
+        }
+
+        .menu {
+            display: flex;
+        }
+
+        .menu > li {
+            list-style: none;
+        }
+
+        .menu > li > a {
+            padding: 16px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .sign_zone > button {
+            background-color: #fff;
+            border: none;
+            padding: 16px 0;
+            border-radius: 16px;
+            transition: 0.5s;
+        }
+
+        .sign_zone > button > a {
+            padding: 16px;
+            text-decoration: none;
+            color: crimson;
+            font-size: 18px;
+            font-weight: 900;
+            transition: 0.5s;
+        }
+
+        .sign_zone > button:hover {
+            background-color: rgb(255, 209, 218);
+        }
+
+        .sign_zone > button:hover > a{
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            LOGO
+        </div>
+
+        <ul class="menu">
+            <li>
+                <a href="#">ABOUT</a>
+            </li>
+            <li>
+                <a href="#">MENU</a>
+            </li>
+            <li>
+                <a href="#">PORTFOLIO</a>
+            </li>
+            <li>
+                <a href="#">CONTACT</a>
+            </li>
+        </ul>
+        
+        <div class="sign_zone">
+            <button>
+                <a href="#">로그인</a>
+            </button>
+            <button>
+                <a href="#">회원가입</a>
+            </button>
+        </div>
+    </header>
+</body>
+</html>
