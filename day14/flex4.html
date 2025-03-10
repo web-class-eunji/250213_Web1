@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex속성</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: #ffdfdb;
+            border: 1px solid black;
+            height: 200px;
+        }
+
+        .box {
+            background: pink;
+            border: 1px solid black;
+            /* width: 50px; */
+            height: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 100px;
+            flex-basis: 100px;
+            /* 요소의 최소값 설정 */
+        }
+
+        .grow,
+        .shrink {
+            border: 1px solid #000;
+            margin: 5px;
+        }
+
+        .grow:nth-child(1){
+            flex-grow: 2;
+        }
+        .grow:nth-child(2){
+            flex-grow: 7;
+        }
+        .grow:nth-child(3){
+            flex-grow: 1;
+        }
+
+        .shrink {
+            width: 50%;
+        }
+        
+        .shrink:nth-child(1){
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box1box1box1box1box1box1box1box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+        <div class="box">box6</div>
+    </div>
+
+    <div class="container">
+        <div class="grow">item</div>
+        <div class="grow">item</div>
+        <div class="grow">item</div>
+    </div>
+
+    <div class="container">
+        <div class="shrink">item</div>
+        <div class="shrink">item</div>
+        <div class="shrink">item</div>
+    </div>
+</body>
+</html>
