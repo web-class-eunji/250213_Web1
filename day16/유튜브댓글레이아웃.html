@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유튜브댓글</title>
+    <script src="https://kit.fontawesome.com/c20f4000ab.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .comment_container {
+            display: flex;
+            max-width: 1200px;
+            justify-content: space-between;
+        }
+
+        figure,
+        figure > img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .basis {
+            flex-basis: 90%;
+        }
+
+        .user_name,
+        .comment_content {
+            font-size: 14px;
+        }
+
+        .icon_box {
+            display: flex;
+            margin: 10px 10px 10px 0;
+            align-items: center;
+        }
+
+        .icon_box > div:first-child {
+            margin-right: 16px;
+        }
+
+        .icon_box > div:nth-child(2) {
+            margin-right: 32px;
+        }
+
+        button {
+            background: none;
+            border: none;
+        }
+
+        .icon_box > p,
+        .icon_box > div > button > i,
+        .icon_box > div > span {
+            color: #5c5c5c;
+        }
+
+        .recomment > button {
+            color: #065fd4;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <article class="comment_container">
+        <figure>
+            <img src="./유튜브이미지.jpg" alt="유저프로필사진">
+        </figure>
+
+        <div class="basis">
+            <h2 class="user_name">@RelaxPianoJazz1119</h2>
+            <p class="comment_content">
+                This sound is so wonderful. The person who is reading this comment , i wish you great success , health, love and happiness !
+            </p>
+
+            <div class="icon_box">
+                <div>
+                    <button>
+                        <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                    </button>
+                    <span>21</span>
+                </div>
+                <div>
+                    <button>
+                        <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                    </button>
+                </div>
+                <p>답글</p>
+            </div>
+
+            <div class="recomment">
+                <button>
+                    <i class="fa-solid fa-chevron-down fa-xl"></i>
+                    <span>답글 1개</span>
+                </button>
+            </div>
+        </div>
+
+        <div>
+            <button>
+                <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+            </button>
+        </div>
+        
+    </article>
+</body>
+</html>
